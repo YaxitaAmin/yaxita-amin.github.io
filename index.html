@@ -3,19 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Machine Learning Engineer</title>
-    <meta name="description" content="Portfolio website showcasing machine learning and deep learning projects">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Machine Learning Engineer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <!-- Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="root"></div>
-    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
-    <script src="index.js"></script>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Portfolio</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#activities">Activities</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Machine Learning Engineer</h1>
+            <p>Specializing in Deep Learning & Model Optimization</p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="section-container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-items">
+                    <div class="education-item">
+                        <h3>University Of Maryland College Park, USA</h3>
+                        <p class="degree">Master Of Science - Applied Machine Learning</p>
+                        <p class="duration">Aug 2024 - Expected 2026</p>
+                        <p class="coursework">Relevant Coursework: Statistical Analysis, Machine Learning, Data Science, Predictive Modeling</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Vishwakarma Government Engineering College Ahmedabad, India</h3>
+                        <p class="degree">Bachelor of Engineering - Information Technology</p>
+                        <p class="duration">July 2020 - June 2024</p>
+                        <p class="gpa">GPA: 3.52</p>
+                        <p class="coursework">Relevant Coursework: Database Systems, Statistics, Programming</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="section-container">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-item">
+                    <h3>Research Assistant</h3>
+                    <p class="company">Vishwakarma Government Engineering College</p>
+                    <p class="duration">Remote Sensing Deep Learning Research (Jan 2024 – June 2024)</p>
+                    <ul class="experience-list">
+                        <li>Conducted comprehensive analysis of 60+ research papers on U-Net architectures</li>
+                        <li>Developed comparative analysis framework for evaluating U-Net variants</li>
+                        <li>Presented research findings to faculty, highlighting key architectural modifications</li>
+                        <li>Created detailed documentation of U-Net modifications for satellite image change detection</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-container">
+                <h2 class="section-title">Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>BERT Model Compression Suite</h3>
+                        <p class="project-type">Machine Learning Optimization</p>
+                        <ul class="project-details">
+                            <li>Reduced BERT model size by 80% (440MB to 90MB)</li>
+                            <li>Achieved 47% lower inference latency while maintaining 91.5% performance</li>
+                            <li>Optimized training pipeline resulting in 69.2% reduction in training time</li>
+                            <li>Implemented memory optimization techniques reducing usage from 14GB to 8GB</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">AWS EC2</span>
+                            <span class="tech-tag">NVIDIA CUDA</span>
+                            <span class="tech-tag">Weights & Biases</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>LeafDoctorAI</h3>
+                        <p class="project-type">Plant Disease Detection System</p>
+                        <ul class="project-details">
+                            <li>Developed system using MobileNetV2 architecture achieving 98.20% accuracy</li>
+                            <li>Implemented comprehensive data augmentation pipeline</li>
+                            <li>Created scalable training pipeline supporting 39 disease classifications</li>
+                            <li>Achieved 97.91% validation accuracy</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">MobileNetV2</span>
+                            <span class="tech-tag">Transfer Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Machine Learning</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">Deep Learning</span>
+                            <span class="skill-tag">Transfer Learning</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Programming</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Cloud & Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS EC2</span>
+                            <span class="skill-tag">GPU Optimization</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities Section -->
+        <section id="activities" class="section">
+            <div class="section-container">
+                <h2 class="section-title">Activities and Leadership</h2>
+                <div class="activities-content">
+                    <div class="activity-item">
+                        <h3>HackVGEC Student Organizer (2023)</h3>
+                        <p>Organized state-level hackathon for 200+ participants</p>
+                    </div>
+                    <div class="activity-item">
+                        <h3>Hackathon Achievements</h3>
+                        <ul>
+                            <li>SSIP Grand Finale Finalist (2023) - Selected among 700+ participants</li>
+                            <li>Smart India Hackathon Participant (2022)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
